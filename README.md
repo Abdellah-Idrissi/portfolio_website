@@ -1,11 +1,14 @@
-## Skincare Ecommerce Website
+## Portfolio Website
 
-- Responsive Portfolio Website Developed Using HTML Tailwind , PostCSS & JavaScript
+- Responsive Portfolio Website Developed Using **(HTML , Tailwind , PostCSS , JavaScript , Scrollrevealjs , Swiperjs , emailJS)**
+  
+- Includes a light and dark theme.
+ 
+- Includes a form to send emails.
+  
+- Contains animations when scrolling.
 
-- Contains animations when scrolling (ScrollRevealJs)
-
-- Developed first with the Mobile First methodology, then for desktop.
+- Developed with the Mobile First methodology, then for desktop.
 
 + [**LIVE DEMO**](https://abdellah-idrissi.github.io/skincare-ecommerce-website/#)
-
 
