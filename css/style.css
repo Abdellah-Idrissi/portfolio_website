@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+  h1,h2,h3 {
+    @apply text-titleColor font-titleFont font-medium dark:text-dk-titleColor transition-colors duration-300 
+  }
+
+  h1 {
+    @apply text-h1Size lg:text-lg-h1Size
+  }
+
+  h2 {
+    @apply text-h2Size lg:text-lg-h2Size
+  }
+
+  h3 {
+    @apply text-h3Size lg:text-lg-h3Size
+  }
+
+  .icon {
+    @apply font-[500] text-[18px] cursor-pointer ;
+  }
+
+  .li {
+    @apply w-1/3 text-center grid lg:w-fit lg:text-[14.5px] text-textLightColor
+  }
+
+  .navA {
+    @apply flex flex-col-reverse justify-center gap-2 transition-all duration-300 hover:text-titleColor hover:dark:text-bodyColor
+  }
+
+  .active {
+    @apply text-titleColor dark:text-bodyColor
+  }
+
+  .navLinkActive {
+    @apply text-firstColor
+  }
+
+  .container {
+    @apply lg:max-w-[1110px]
+  }
+
+  .sectionTitle {
+    @apply text-[25px] md:text-[35px]  lg:text-[40px]
+  }
+
+  .titleDesc {
+    @apply text-textLightColor text-[14px] mb-10 md:mb-20 lg:text-[15px]
+  }
+
+  .bounceAnimation {
+    @apply hover:animate-bounceAnimate transition-all duration-300
+  }
+
+  .qualifChild {
+    @apply text-center grid gap-y-2
+  }
+
+  .sectionBorderBottom {
+    @apply border-b-[2px] border-textColor pb-[4.5rem]
+  }
+
+  .darkTransition {
+    @apply transition-all duration-300
+  }
+
+}
+
+.navShowUp {
+  @apply translate-y-0
+}
+
+.showArrowUp {
+    @apply translate-x-0
+}
+
+.swiper-pagination-bullet {
+
+  @apply bg-[#7372736e] opacity-100 dark:bg-[#ffffff40] darkTransition;
+
+  &-active {
+    @apply bg-titleColor dark:bg-bodyColor
+  }
+  
+}
+
+.fillInputs {
+  @apply text-red-500 font-[500] dark:font-[400]
+}
+
+.sent {
+  @apply text-green-500 font-[500] dark:font-[400]
+}
+
+::-webkit-scrollbar {
+  @apply w-[0.6rem] transition-all duration-300 bg-[hsl(207,4%,82%)] dark:bg-[hsl(207,4%,15%)];
+
+  &-thumb {
+    @apply bg-[hsl(207,4%,65%)] transition-all duration-300 hover:bg-[hsl(207,4%,55%)] dark:bg-[hsl(207,4%,30%)] dark:hover:bg-[hsl(207,4%,35%)]
+  }
+}
+
+@media (max-width:1023px) {
+  header {
+    @apply bottom-7 w-[90%] max-w-[390px] left-1/2 -translate-x-1/2 rounded-3xl shadow-navShadow relative;
+
+    ul {
+      @apply gap-y-8 pb-[70px] rounded-[22px] w-full left-0 bottom-[-2px] py-4 translate-y-60 transition-all duration-300 absolute bg-bodyColor flex-wrap shadow-navShadow
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .scrolling {
+    @apply shadow-headerShadow dark:shadow-md
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .wrapItemCenter {
+    @apply md:w-[288px] md:mx-auto md:col-start-1 md:col-end-3
+  }
+}
+
+@media (max-width:625px) {
+  .arrowUp {
+    @apply bottom-[100px]
+  }
+}
+
+

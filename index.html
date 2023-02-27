@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio">
+    <title class="">Potfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!------------ PRELOAD HOME IMAGE ------------>
+    <link rel="preload" as="image" href="./imgs/perfil.png">
+
+    <!------------- FAVICON ------------->
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+
+    <!------------- REMIXICON ------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!------------- MAIN CSS FILE ------------->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <!------------- SCROLLREVEALJS ------------->
+    <script src="./js/scrollreveal.min.js"></script>
+    
+  </head>
+
+  <body class="transition-all duration-300 bg-bodyColor dark:bg-dk-bodyColor text-textColor dark:text-dk-textColor text-normalSize lg:text-lg-normalSize font-bodyFont">
+
+    <main class="overflow-hidden">
+
+      <div class="arrowUp fixed z-50 translate-x-[150px] bottom-[36px] cursor-pointer right-[30px] bg-bodyColor dark:bg-dk-bodyColor darkTransition shadow-navShadow flex justify-center items-center ">
+        <i class="ri-arrow-drop-up-line leading-none text-[40px] text-titleColor darkTransition dark:text-bodyColor"></i>
+      </div>
+
+      <!------------- HEADER & NAV ------------->
+      <header class="fixed bg-bodyColor darkTransition dark:bg-dk-bodyColor lg:p-4 lg:px-[20px] z-50 lg:transition-all lg:duration-300 lg:w-full ">
+        <div class="flex items-center p-4 lg:p-0 gap-x-4 lg:gap-x-0 lg:container">
+          <div class="grow font-titleFont dark:text-textLightColor font-[600] lg:text-[17px] cursor-pointer">Abdellah</div>
+          <ul class="nav_list items-center bg-bodyColor darkTransition dark:bg-dk-bodyColor flex lg:gap-x-7 lg:mr-4" id="nav">
+            <li class="li">
+              <a href="#home" class="navA active">
+                <span class="leading-none">Home</span>
+                <i class="ri-home-5-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#skills" class="navA">
+                <span class="leading-none">Skills</span>
+                <i class="ri-trophy-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#qualification" class="navA">
+                <span class="leading-none text-[15px]">Qualification</span>
+                <i class="ri-book-open-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#services" class="navA">
+                <span class="leading-none">Services</span>
+                <i class="ri-briefcase-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#projects" class="navA">
+                <span class="leading-none">Projects</span>
+                <i class="ri-image-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#contact" class="navA">
+                <span class="leading-none">Contact</span>
+                <i class="ri-chat-3-line leading-none text-[17px] lg:hidden"></i>
+              </a>
+            </li>
+  
+            <div id="closeIcon"><i class="ri-close-line absolute bottom-[16px] icon text-[22px] text-textLightColor dark:hover:text-bodyColor hover:text-titleColor transition-all duration-300 right-[16px] lg:hidden"></i></div>
+          </ul>
+          <div class="themeBtn"><i class="ri-moon-line icon text-textLightColor dark:hover:text-bodyColor hover:text-black transition-all duration-200"></i></div>
+          <div id="menuIcon"><i class="ri-menu-4-line icon text-textLightColor transition-all duration-200 dark:hover:text-bodyColor hover:text-titleColor lg:hidden"></i></div>
+        </div>
+      </header>
+
+      <!------------- HOME ------------->
+      <div class="pt-[5rem] px-[20px] lg:px-[40px] lg:pt-[10rem] section" id="home">
+        <h1 class="hide text-center mb-12 text-[2.5rem] lg:text-lg-biggestSize leading-[1.2] home_pic">Hi, I’m Abdellah <br> Frontend Developer <br> Based In Morocco <br></h1>
+        <div class="container text-center md:grid-cols-6 md:grid sectionBorderBottom pb-14 md:pb-20">
+          <div class="md:col-start-3 md:col-end-5 home_pic">
+            <h1 class="text-biggestSize md:hidden leading-8 mb-7">Hi, I’m Abdellah <br> Frontend Developer <br> Based In Morocco <br></h1>
+
+            <div class="w-fit bg-bodyColor dark:bg-dk-containerColor darkTransition relative mx-auto p-3 lg:p-5 rounded-full border-titleColor dark:border-[#25292c88] border-[1px]">
+              <div class="w-[200px] md:w-[100%] mx-auto bg-gradientColor px-2 pt-6 rounded-full overflow-hidden">
+                <img src="./imgs/perfil.png" alt="" class="">
+              </div>
+              <div class="w-[60px] lg:w-[100px] opacity-10 absolute top-[34%] -left-[20px] lg:-left-[50px] -translate-y-1/2 "><img src="./imgs/shape-wawes.svg" alt="" class="darkTransition dark:invert"></div>
+              <div class="absolute top-[45%] lg:top-[47%] lg:bottom-[-17rem] opacity-10 rotate-[50deg] bottom-[-9rem] -z-[1]"><img src="./imgs/shape-circle.svg" alt="" class="darkTransition dark:invert"></div>
+            </div>
+  
+            <div class="flex gap-x-3 lg:gap-x-5 justify-center mt-7">
+              <a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"><i class="ri-linkedin-box-line text-[19px] lg:text-[23px] text-textLightColor dark:hover:text-bodyColor transition-all duration-200 hover:text-titleColor"></i></a>
+              <a href="https://github.com/" aria-label="github" target="_blank"><i class="ri-github-line text-[19px] lg:text-[23px] text-textLightColor transition-all dark:hover:text-bodyColor duration-200 hover:text-titleColor"></i></a>
+              <a href="https://dribbble.com/" aria-label="dribbble" target="_blank"><i class="ri-dribbble-line text-[19px] lg:text-[23px] text-textLightColor transition-all dark:hover:text-bodyColor duration-200 hover:text-titleColor"></i></a>
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-y-6 md:col-start-1 md:col-end-3 md:row-start-1 md:text-left md:mt-2 home_text">
+            <div>
+              <div class="text-textLightColor mb-2 text-[14px]">BIOGRAPHY</div>
+              <p class="font-titleFont text-dk-bodyColor darkTransition dark:text-bodyColor font-medium max-w-[320px] md:mx-0 md:max-w-[183px] lg:max-w-[250px] mx-auto ">Hi, I'm Abdellah, Frontend Developer.Passionate about designing beautiful web interfaces. Based in Morocco.</p>
+            </div>
+            <div>
+              <div class="text-textLightColor mb-2 text-[14px]">CONTACT</div>
+              <p class="font-titleFont text-dk-bodyColor darkTransition dark:text-bodyColor font-medium">Lima, Morocco <br>abdellahidrissi@email.com <br>+51 9876543210 <br></p>
+            </div>
+            <div>
+              <div class="text-textLightColor mb-2 text-[14px]">SERVICES</div>
+              <p class="font-titleFont text-dk-bodyColor darkTransition dark:text-bodyColor font-medium">Website Design <br>UI/UX Design <br>Animation <br></p>
+            </div>
+          </div>
+
+          <div class="mt-12 grid gap-y-6 md:col-start-5 md:col-end-7 md:row-start-1 md:text-right md:mt-2 home_text">
+            <div>
+              <div class="text-textLightColor text-[14px] mb-1 ">YEARS OF EXPERIENCE</div>
+              <p class="text-[22px] dark:text-bodyColor darkTransition font-titleFont text-dk-bodyColor font-medium lg:text-[35px] ">08+</p>
+            </div>
+            <div>
+              <div class="text-textLightColor text-[14px] mb-1">COMPLETED PROJECTS</div>
+              <p class="text-[22px] dark:text-bodyColor darkTransition font-titleFont text-dk-bodyColor font-medium lg:text-[35px]">24+</p>
+            </div>
+            <div>
+              <div class="text-textLightColor text-[14px] mb-1 ">COMPANIES WORKED</div>
+              <p class="text-[22px] dark:text-bodyColor darkTransition font-titleFont text-dk-bodyColor font-medium lg:text-[35px]">07+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------- SKILLS ------------->
+      <div class="px-[20px] pt-[4rem] section" id="skills">
+        <div class="text-center">
+          <h2 class="sectionTitle">Skills</h2>
+          <p class="titleDesc lg:text-[14px]">My favorite skills</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+          <div class="flex flex-col gap-11 md:flex-row">
+            <div class="md:grow skills_left">
+              <h3 class="flex justify-center items-center gap-x-1 mb-9"><i class="ri-braces-line"></i> Frontend Developer</h3>
+              <div class="w-full max-w-[400px] grid  grid-cols-threeGrid mx-auto gap-4 gap-y-6 ">
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px]  grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/html-1.svg" alt="" class="w-[50px] bounceAnimation ">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition darkTransition font-medium dark:text-bodyColor">HTML</p>
+                    <p class="text-textLightColor text-[13px]">Intermediate</p>
+                  </div>
+                </div>
+  
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition darkTransitionpy -[1.5rem] h-[105px] grid items-center dark:text-bodyColor justify-center rounded-[50px]">
+                    <img src="./imgs/css-3.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition dark:text-bodyColor font-medium">CSS</p>
+                    <p class="text-textLightColor text-[13px]">Advanced</p>
+                  </div>
+                </div>
+  
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center dark:text-bodyColor justify-center rounded-[50px]">
+                    <img src="./imgs/logo-javascript.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">JavaScript</p>
+                    <p class="text-textLightColor text-[13px]">Intermediate</p>
+                  </div>
+                </div>
+  
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/react-2.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">React</p>
+                    <p class="text-textLightColor text-[13px]">Basic</p>
+                  </div>
+                </div>
+  
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/git-icon.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Git</p>
+                    <p class="text-textLightColor text-[13px]">Intermediate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="md:grow skills_right">
+              <h3 class="flex justify-center items-center gap-x-1 mb-9"><i class="ri-pencil-ruler-2-line"></i> Web Designer</h3>
+              <div class="w-full max-w-[400px]  grid  grid-cols-threeGrid mx-auto gap-4 gap-y-6 ">
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px]  grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/figma-1.svg" alt="" class="w-[40px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Figma</p>
+                    <p class="text-textLightColor text-[13px]">Advanced</p>
+                  </div>
+                </div>
+    
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/sketch-2.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Sketch</p>
+                    <p class="text-textLightColor text-[13px]">Basic</p>
+                  </div>
+                </div>
+    
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/adobe-xd-1.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Adobe XD</p>
+                    <p class="text-textLightColor text-[13px]">Intermediate</p>
+                  </div>
+                </div>
+    
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/invision.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Invision</p>
+                    <p class="text-textLightColor text-[13px]">Basic</p>
+                  </div>
+                </div>
+    
+                <div class="w-[80%]  mx-auto">
+                  <div class="bg-gray-100 dark:bg-dk-containerColor darkTransition py-[1.5rem] h-[105px] grid items-center justify-center rounded-[50px]">
+                    <img src="./imgs/adobe-photoshop-2.svg" alt="" class="w-[50px] bounceAnimation">
+                  </div>
+                  <div class="text-center mt-4 ">
+                    <p class="font-titleFont text-dk-bodyColor darkTransition font-medium dark:text-bodyColor">Photoshop</p>
+                    <p class="text-textLightColor text-[13px]">Intermediate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------- QUALIFICATION  ------------->
+      <div class="pt-[4rem] px-[20px] section" id="qualification">
+        <div class="text-center">
+          <h2 class="sectionTitle">Qualification</h2>
+          <p class="titleDesc">Experience & education</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+          <div class="flex flex-col gap-14 md:flex-row">
+            <div class="md:w-[50%] qualif_left">
+              <h3 class="flex justify-center items-center gap-x-1  mb-9 font-[600]"><i class="ri-book-line text-[15px]"></i> Education</h3>
+              <div class="grid gap-y-7">
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor md:text-[19px] font-medium text-[17px] mb-[5px] font-titleFont">Master In Web Development</h4>
+                  <p class="text-textLightColor">Morocco - University</p>
+                  <p class="text-textLightColor">2014 - 2019</p>
+                </div>
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor md:text-[19px] font-medium text-[17px] mb-[5px] font-titleFont">UI/UX Design</h4>
+                  <p class="text-textLightColor">Institute - Morocco</p>
+                  <p class="text-textLightColor">2017 - 2019</p>
+                </div>
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor md:text-[19px] font-medium text-[17px] mb-[5px] font-titleFont">Computer Engineer</h4>
+                  <p class="text-textLightColor">Institute - Morocco</p>
+                  <p class="text-textLightColor">2019 - 2022</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:w-[50%] qualif_right">
+              <h3 class="flex justify-center items-center gap-x-1 mb-9 font-[600]"><i class="ri-building-line"></i> Work</h3>
+              <div class="grid gap-y-7">
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor font-medium text-[17px] md:text-[19px] mb-[5px] font-titleFont">Fontend Developer</h4>
+                  <p class="text-textLightColor">Adobe - Morocco</p>
+                  <p class="text-textLightColor">2014 - 2019</p>
+                </div>
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor font-medium text-[17px] md:text-[19px] mb-[5px] font-titleFont">Software Engineer</h4>
+                  <p class="text-textLightColor">Microsoft - Morocco</p>
+                  <p class="text-textLightColor">2018 - 2020</p>
+                </div>
+                <div class="qualifChild">
+                  <h4 class="text-titleColor darkTransition dark:text-bodyColor font-medium text-[17px] md:text-[19px] mb-[5px] font-titleFont">Graphic Designer</h4>
+                  <p class="text-textLightColor">Figma - Morocco</p>
+                  <p class="text-textLightColor">2020 - Present</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------- SERVICES ------------->
+      <div class="pt-[4rem] px-[20px] section" id="services">
+        <div class="text-center">
+          <h2 class="sectionTitle">Services</h2>
+          <p class="titleDesc mb-[4rem]">What I offer</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+          <div class="grid gap-4 lg:grid-cols-threeGrid md:grid-cols-twoGrid">
+
+              <div class="service_item transition-colors mx-auto group w-fit rounded-full duration-500 p-3 border-[2px] border-transparent hover:border-titleColor">
+                <div class="text-center grid gap-y-3 justify-center items-center rounded-full bg-gray-100 dark:bg-dk-containerColor darkTransition py-[60px] px-[33px] w-[240px] lg:w-[275px] sm:w-[260px]">
+                  <i class="ri-shape-line text-[30px] group-hover:animate-rotateYAnimate text-titleColor darkTransition dark:text-bodyColor"></i>
+                  <h3 class="text-[22px] font-[600] ">UI/UX <br> Designer</h3>
+                  <p class="darkTransition">Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+                </div>
+              </div>
+
+              <div class="service_item transition-colors mx-auto w-fit group rounded-full duration-500 p-3 border-[2px] border-transparent hover:border-titleColor">
+                <div class="text-center justify-center grid gap-y-3 items-center rounded-full bg-gray-100 dark:bg-dk-containerColor darkTransition py-[60px] px-[33px] w-[240px] lg:w-[275px] sm:w-[260px]">
+                  <i class="ri-code-line text-[30px] text-titleColor group-hover:animate-rotateYAnimate dark:text-bodyColor darkTransition"></i>
+                  <h3 class="text-[22px] font-[600] ">Website <br> Design</h3>
+                  <p class="darkTransition">Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+                </div>
+              </div>
+
+              <div class="service_item transition-colors mx-auto w-fit group rounded-full duration-500 p-3 border-[2px] wrapItemCenter border-transparent hover:border-titleColor">
+                <div class="text-center justify-center grid gap-y-3 items-center rounded-full bg-gray-100 dark:bg-dk-containerColor darkTransition py-[60px] px-[33px] w-[240px] lg:w-[275px] sm:w-[260px]">
+                  <i class="ri-quill-pen-line text-[30px] text-titleColor group-hover:animate-rotateYAnimate dark:text-bodyColor darkTransition" ></i>
+                  <h3 class="text-[22px] font-[600] ">Digital <br> Animator</h3>
+                  <p class="darkTransition">Service that provides the best quality and at the request of the client, with professional work and customer support.</p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!------------- PROJECTS ------------->
+      <div class="pt-[4rem] px-[20px] section" id="projects">
+        <div class="text-center">
+          <h2 class="sectionTitle">Projects</h2>
+          <p class="titleDesc mb-[4rem]">Most recent work</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+          <div class="swiper projectsSwiper pb-20 px-10">
+            <div class="swiper-wrapper">
+              <div class="grid gap-y-4 swiper-slide  justify-center">
+                <div class="rounded-lg overflow-hidden max-w-[360px]">
+                  <div><img src="./imgs/project1.jpg" alt=""></div>
+                </div>
+  
+                <div class="mt-2 mb-2">
+                  <p class="leading-[1] text-[15px] mb-[10px] text-textLightColor">Web</p>
+                  <h3 class="leading-[1] text-[21px]">Modern Website</h3>
+                </div>
+  
+                <div class="items-center cursor-pointer group text-[15px] text-dk-bodyColor gap-x-1 flex"><span>View demo</span><i class="ri-arrow-right-line transition-all duration-200 group-hover:translate-x-1 relative top-[1px]"></i></div>
+  
+              </div>
+  
+              <div class="grid gap-y-4 swiper-slide justify-center">
+                <div class="rounded-lg overflow-hidden max-w-[360px]">
+                  <div><img src="./imgs/project2.jpg" alt=""></div>
+                </div>
+  
+                <div class="mt-2 mb-2">
+                  <p class="leading-[1] text-[15px] mb-[10px] text-textLightColor">Web</p>
+                  <h3 class="leading-[1] text-[21px]">ECommerce Store</h3>
+                </div>
+  
+                <div class="items-center cursor-pointer group text-[15px] text-dk-bodyColor gap-x-1 flex"><span>View demo</span><i class="ri-arrow-right-line transition-all duration-200 group-hover:translate-x-1 relative top-[1px]"></i></div>
+  
+              </div>
+  
+              <div class="grid gap-y-4 swiper-slide justify-center">
+                <div class="rounded-lg overflow-hidden max-w-[360px]">
+                  <div><img src="./imgs/project3.jpg" alt=""></div>
+                </div>
+  
+                <div class="mt-2 mb-2">
+                  <p class="leading-[1] text-[15px] mb-[10px] text-textLightColor">Design</p>
+                  <h3 class="leading-[1] text-[21px]">Application Design</h3>
+                </div>
+  
+                <div class="items-center cursor-pointer group text-[15px] text-dk-bodyColor gap-x-1 flex"><span>View demo</span><i class="ri-arrow-right-line transition-all duration-200 group-hover:translate-x-1 relative top-[1px]"></i></div>
+  
+              </div>
+  
+              <div class="grid gap-y-4 swiper-slide  justify-center">
+                <div class="rounded-lg overflow-hidden max-w-[360px]">
+                  <div><img src="./imgs/project4.jpg" alt=""></div>
+                </div>
+  
+                <div class="mt-2 mb-2">
+                  <p class="leading-[1] text-[15px] mb-[10px] text-textLightColor">Animation</p>
+                  <h3 class="leading-[1] text-[21px]">Animation Prototypes</h3>
+                </div>
+  
+                <div class="items-center cursor-pointer group text-[15px] text-dk-bodyColor gap-x-1 flex"><span>View demo</span><i class="ri-arrow-right-line transition-all duration-200 group-hover:translate-x-1 relative top-[1px]"></i></div>
+  
+              </div>
+            </div>
+
+            <div class="swiper-button-next w-0 h-0 mt-0 top-[30%] after:content-['']"><i class="ri-arrow-right-s-line text-titleColor darkTransition dark:text-bodyColor text-[40px]"></i></div>
+            <div class="swiper-button-prev w-0 h-0 mt-0 top-[30%] after:content-['']"><i class="ri-arrow-left-s-line text-titleColor darkTransition dark:text-bodyColor  text-[40px]"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!------------- TESTIMONIAL ------------->
+      <div class="pt-[4rem] px-[20px]">
+        <div class="text-center">
+          <h2 class="sectionTitle">Testimonial</h2>
+          <p class="titleDesc mb-[4rem]">My client saying</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+          <div class="swiper testimonialSwiper pb-[60px]">
+
+            <div class="swiper-wrapper">
+
+              <div class="text-center swiper-slide ">
+                <p class="font-titleFont font-medium mb-5 text-[17px] max-w-[410px] mx-auto sm:text-[18px] sm:max-w-[430px] md:text-[19px] md:max-w-[455px] lg:text-[21px] lg:max-w-[530px]">“Working with Abdellah is to give a good impression, I carry out my project at a good cost, with excellent quality and attention. Great service and recommended.”</p>
+                <p class="text-titleColor font-medium text-[13.5px] dark:text-[#4b4f52] darkTransition">Anna Chel</p>
+                <span class="text-textLightColor text-[13px]">Client</span>
+              </div>
+
+              <div class="text-center swiper-slide">
+                <p class="font-titleFont font-medium mb-5 text-[17px] max-w-[410px] mx-auto sm:text-[18px] sm:max-w-[430px] md:text-[19px] md:max-w-[455px] lg:text-[21px] lg:max-w-[530px]">“Working with Abdellah is to give a good impression, I carry out my project at a good cost, with excellent quality and attention. Great service and recommended.”</p>
+                <p class="text-titleColor font-medium text-[13.5px] dark:text-[#4b4f52] darkTransition">Mary Lens</p>
+                <span class="text-textLightColor text-[13px]">Client</span>
+              </div>
+
+              <div class="text-center swiper-slide ">
+                <p class="font-titleFont font-medium mb-5 text-[17px] max-w-[410px] mx-auto sm:text-[18px] sm:max-w-[430px] md:text-[19px] md:max-w-[455px] lg:text-[21px] lg:max-w-[530px]">“Working with Abdellah is to give a good impression, I carry out my project at a good cost, with excellent quality and attention. Great service and recommended.”</p>
+                <p class="text-titleColor font-medium text-[13.5px] dark:text-[#4b4f52] darkTransition">Klay Harris</p>
+                <span class="text-textLightColor text-[13px]">Client</span>
+              </div>
+
+            </div>
+
+            <div class="swiper-button-next after:content-[''] top-[90%] right-[50%] translate-x-[40px] lg:translate-x-[50px] "><i class="ri-arrow-right-s-line darkTransition dark:text-bodyColor  text-titleColor text-[35px]  "></i></div>
+            <div class="swiper-button-prev after:content-[''] top-[90%] left-[50%] -translate-x-[40px] lg:-translate-x-[50px]"><i class="ri-arrow-left-s-line darkTransition dark:text-bodyColor  text-titleColor text-[35px]  "></i></div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!------------- CONTACT ------------->
+      <div class="pt-[4rem] px-[20px] section" id="contact">
+        <div class="text-center">
+          <h2 class="sectionTitle">Contact Me</h2>
+          <p class="titleDesc mb-[4rem]">Get in touch</p>
+        </div>
+
+        <div class="container sectionBorderBottom">
+
+          <div class="flex flex-col gap-y-14 gap-x-2 md:flex-row lg:max-w-[900px] lg:mx-auto">
+            <div class="md:w-[40%] contact_left">
+              <h3 class="flex justify-center items-center gap-x-1 mb-9 font-[600]"><i class="ri-chat-3-line text-[14.5px]"></i> Talk To Me</h3>
+              <div class="text-center grid gap-y-7">
+                <div>
+                  <h4 class="text-textLightColor mb-[8px] md:text-[16px]">Email</h4>
+                  <a href="mailto:abdellahidrissi@email.com" class="font-titleFont md:text-[16.5px] font-medium text-titleColor darkTransition dark:text-[#ffffffe1]">abdellahidrissi@email.com</a>
+                </div>
+  
+                <div>
+                  <h4 class="text-textLightColor mb-[8px]">Whatsapp</h4>
+                  <a href="https://wa.me/0644910014" target="_blank" class="font-titleFont md:text-[16.5px] font-medium text-titleColor darkTransition dark:text-[#ffffffe1]">+0644910014</a>
+                  <p class="flex items-center justify-center gap-x-[5px] mt-[6px]  text-[15px] text-titleColor dark:text-[#ffffffe1] darkTransition">Write me <i class="ri-arrow-right-line relative top-[1px]"></i></p>
+                </div>
+  
+                <div>
+                  <h4 class="text-textLightColor mb-[8px]">Facebook</h4>
+                  <a href="https://www.facebook.com/"  target="_blank" class="font-titleFont font-medium md:text-[16.5px] text-titleColor dark:text-[#ffffffe1] darkTransition">@Abdellah.fb333</a>
+                  <p class="flex items-center justify-center gap-x-[5px] mt-[6px] text-[15px] text-titleColor dark:text-[#ffffffe1] darkTransition">Write me <i class="ri-arrow-right-line relative top-[1px]"></i></p>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class="md:w-[60%] contact_right">
+              <h3 class="flex justify-center items-center gap-x-1 mb-9 font-[600]"><i class="ri-send-plane-line text-[14.5px]"></i> Write me your project</h3>
+              <div>
+                <div class="grid gap-y-7 max-w-[400px] mx-auto lg:max-w-[430px] ">
+                  <div class="border border-titleColor dark:border-[#ffffffe1] darkTransition p-4 py-5 rounded-full relative">
+                    <input type="text" placeholder="Enter your name" id="name" autocomplete="off" class="w-full bg-bodyColor dark:placeholder:text-[#626b74] darkTransition dark:text-[#626b74] dark:bg-dk-bodyColor text-[15px] outline-none font-titleFont indent-1">
+                    <div class="absolute top-0 -translate-y-1/2 bg-bodyColor text-[14px] px-[5px] font-medium dark:bg-dk-bodyColor dark:text-[#ffffffe1] darkTransition">Name</div>
+                  </div>
+
+                  <div class="border border-titleColor dark:border-[#ffffffe1] darkTransition p-4 py-5 rounded-full relative">
+                    <input type="email" placeholder="Enter your email" autocomplete="off" id="email" class="w-full bg-bodyColor dark:placeholder:text-[#626b74] darkTransition dark:text-[#626b74] dark:bg-dk-bodyColor text-[15px] outline-none font-titleFont indent-1">
+                    <div class="absolute top-0 -translate-y-1/2 bg-bodyColor text-[14px] dark:text-[#ffffffe1] px-[5px] font-medium dark:bg-dk-bodyColor darkTransition">Email</div>
+                  </div>
+
+                  <div class="border border-titleColor dark:border-[#ffffffe1] darkTransition p-4 py-5 rounded-[2rem] relative h-[120px] lg:h-[150px] ">
+                    <textarea placeholder="Write your project's Idea" id="message" class="w-full bg-bodyColor dark:bg-dk-bodyColor darkTransition dark:placeholder:text-[#626b74] dark:text-[#626b74] text-[15px] h-full resize-none outline-none font-titleFont indent-1" ></textarea>
+                    <div class="absolute top-0 -translate-y-1/2 dark:text-[#ffffffe1] bg-bodyColor text-[14px] px-[5px] font-medium dark:bg-dk-bodyColor darkTransition">Project</div>
+                  </div>
+
+                  <p id="mailMsg" class="-mt-[10px] text-[14px]"></p>
+
+                  <button id="submitBtn" class="text-left text-titleColor dark:text-[#ffffffe1] darkTransition -mt-[20px] text-[20px] group md:text-[25px] font-titleFont font-[600] flex items-center gap-x-1">Submit <i class="ri-arrow-right-up-line text-[19px] md:text-[23px] translate-x-0 duration-300 group-hover:translate-x-[5px] self-end"></i> </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!------------- FOOTER ------------->
+      <div class="pt-[3rem] px-[20px] pb-[3rem]">
+        <div class="text-center footer">
+          <h2 class="sectionTitle text-[25px]">Abdellah</h2>
+          <p class=" mb-[55px] titleDesc mt-2 text-[18px]">Frontend Developer</p>
+
+          <div class="flex gap-x-[20px] justify-center text-titleColor dark:text-[#626b74] darkTransition">
+            <a href="#home" class="hover:underline transition-all duration-300">Home</a>
+            <a href="#skills" class="hover:underline transition-all duration-300">Skills</a>
+            <a href="#projects" class="hover:underline transition-all duration-300">Projects</a>
+          </div>
+
+          <div class="flex gap-x-4 md:gap-x-7 lg:ml-0 justify-center mt-4">
+            <a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"><i class="ri-linkedin-box-line text-[19px] lg:text-[23px] darkTransition text-titleColor dark:text-[#626b74]"></i></a>
+            <a href="https://github.com/" aria-label="github" target="_blank"><i class="ri-github-line text-[19px] lg:text-[23px] darkTransition text-titleColor dark:text-[#626b74]"></i></a>
+            <a href="https://dribbble.com/" aria-label="dribbble"  target="_blank"><i class="ri-dribbble-line text-[19px] lg:text-[23px] darkTransition text-titleColor dark:text-[#626b74]"></i></a>
+          </div>
+
+          <p class="text-textLightColor text-[14px] mt-[50px] ">&copy; Copyright Abdellah. All Rights reserved</p>
+        </div>
+      </div>
+
+    </main>
+
+
+
+    <!------------- EMAILJS ------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!------------- SWIPERJS ------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!------------- MAIN JS FILE ------------->
+    <script src="./js/main.js"></script>
+
+  </body>
+
+
+</html>
