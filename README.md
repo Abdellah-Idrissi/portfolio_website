@@ -1,6 +1,6 @@
 ## Portfolio Website
 
-- Responsive Portfolio Website Developed Using **(HTML , Tailwind , PostCSS , JavaScript , Scrollrevealjs , Swiperjs , emailJS)**
+- Responsive Portfolio Website Developed Using **(HTML , Tailwind , PostCSS , JavaScript , Scrollrevealjs , Swiperjs)**
   
 - Includes a light and dark theme.
  
