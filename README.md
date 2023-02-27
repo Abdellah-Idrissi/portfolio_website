@@ -10,5 +10,5 @@
 
 - Developed with the Mobile First methodology, then for desktop.
 
-+ [**LIVE DEMO**](https://abdellah-idrissi.github.io/skincare-ecommerce-website/#)
++ [**LIVE DEMO**](https://abdellah-idrissi.github.io/portfolio_website/)
 
